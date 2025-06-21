@@ -22,17 +22,21 @@ body {
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: scroll;            
-  scrollbar-width: none;         
-  -ms-overflow-style: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
 body::-webkit-scrollbar {
-  display: none;                 /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
 }
-nav{
+
+nav {
     padding-left: 5rem;
     padding-right: 5rem
 }
+
 @utility flex-center {
     @apply flex justify-center items-center;
 }
@@ -53,12 +57,18 @@ nav{
 }
 
 @utility radial-gradient {
-    background: radial-gradient(
-            circle at center,
+    background: radial-gradient(circle at center,
             #434343 0%,
             #000 50%,
-            transparent 100%
-    );
+            transparent 100%);
+}
+
+.popular {
+    margin-left: 6rem;
+}
+
+.loved {
+    margin-right: 6rem;
 }
 
 @utility masked-img {
@@ -133,12 +143,12 @@ nav{
 
                     p {
                         @apply text-left;
-                        
+
                     }
 
                     a {
                         @apply font-semibold opacity-80 2xl:text-start text-center hover:text-yellow;
-                       
+
                     }
                 }
             }
@@ -148,10 +158,18 @@ nav{
     video {
         @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
     }
-    .sample1{
+
+    .sample1 {
         margin-left: 5rem
     }
+
+    .sample3 {
+        height: 35%
+    }
+
     #cocktails {
+        
+
         @apply relative min-h-dvh w-full overflow-hidden;
 
         #c-left-leaf {
@@ -233,7 +251,7 @@ nav{
         .top-grid {
             @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
 
-            > div {
+            >div {
                 @apply rounded-3xl overflow-hidden h-72 relative;
             }
 
@@ -245,7 +263,7 @@ nav{
         .bottom-grid {
             @apply grid grid-cols-1 md:grid-cols-12 gap-5 md:px-0 px-5;
 
-            > div {
+            >div {
                 @apply rounded-3xl overflow-hidden h-72 relative;
             }
 

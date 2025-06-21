@@ -21,7 +21,7 @@ const Hero = () => {
 	heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
 	
 	gsap.from(heroSplit.chars, {
-	 yPercent: 100,
+	 yPercent: 40,
 	 duration: 1.8,
 	 ease: "expo.out",
 	 stagger: 0.06,
@@ -98,7 +98,7 @@ const Hero = () => {
 			<div className="view-cocktails">
 			 <p className="subtitle">
 				Every cocktail on our menu is a blend of premium ingredients,
-				creative flair, and timeless recipes — designed to delight your
+				creative flair, and timeless recipes designed to delight your
 				senses.
 			 </p>
 			 <a href="#cocktails">View cocktails</a>
